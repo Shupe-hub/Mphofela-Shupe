@@ -3,51 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <meta name="description" content="Portfolio of Shupe Mphofela Daniel, a Computer Science graduate specializing in software development and IT leadership.">
+  <title>Shupe Mphofela Daniel - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <h1>Shupe Mphofela</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<section id="about">
-  <h1>Hi, I'm [Your Name]</h1>
-  <p>I'm a [your profession, e.g., web developer] passionate about [your niche, e.g., building user-friendly apps].</p>
-  <img src="your-photo.jpg" alt="Your Photo" class="profile-img">
-</section>
-
-<section id="projects">
-  <h2>My Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <img src="project1.jpg" alt="Project 1">
-      <h3>Project 1</h3>
-      <p>Description here.</p>
-      <a href="#">View Live</a>
+<section id="about" class="section">
+  <div class="container">
+    <img src="profile.jpg" alt="Shupe Mphofela Daniel" class="profile-img">
+    <h2>About Me</h2>
+    <p>
+      I'm Shupe Mphofela, a Computer Science graduate from Tshwane University of Technology with a National Diploma. With a 1-year internship at INVESTHOOD IT as an IT Software Developer and Team Leader, I specialize in Java, JavaScript, React, Spring Boot, and database management (MySQL, Oracle, PostgreSQL). I led the development of the Thembisa Accommodation App, showcasing my technical expertise and leadership skills. Passionate about building innovative solutions, I thrive in collaborative environments and am eager to contribute to impactful IT projects.
+    </p>
+    <div class="links">
+      <a href="https://linkedin.com/in/shupe-mphofela-8b38a6318" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Shupe-hub" target="_blank">GitHub</a>
     </div>
-    <!-- Add more cards as needed -->
   </div>
 </section>
 
-<section id="contact">
-  <h2>Get in Touch</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+<section id="projects" class="section">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="[Project 1 Image URL]" alt="Thembisa Accommodation App">
+        <h3>Thembisa Accommodation App</h3>
+        <p>A web and mobile app for property rentals in Tembisa, featuring booking functionality, user authentication, and landlord dashboards, built with React and Spring Boot.</p>
+        <a href="[Live Demo or GitHub URL]" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="[Project 2 Image URL]" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of another project you worked on, highlighting technologies used and outcomes.</p>
+        <a href="[Live Demo or GitHub URL]" target="_blank">View Project</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>Java</div>
+      <div>JavaScript</div>
+      <div>Kotlin</div>
+      <div>React</div>
+      <div>Spring Boot</div>
+      <div>Java EE</div>
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>MySQL</div>
+      <div>Oracle</div>
+      <div>PostgreSQL</div>
+      <div>System Analysis</div>
+      <div>Mobile App Development</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or reach me at: <a href="mailto:Dannmphofela@gmail.com">Dannmphofela@gmail.com</a> | 072 968 9254</p>
+  </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  <div class="container">
+    <p>&copy; 2025 Shupe Mphofela. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>

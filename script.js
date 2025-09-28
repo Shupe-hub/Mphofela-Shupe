@@ -1,5 +1,5 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
@@ -7,8 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Optional: Add form submission alert (replace with real backend later)
-document.querySelector('form').addEventListener('submit', function(e) {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thanks for your message! (This is a demo—connect to a backend for real submissions.)');
+    const name = this.querySelector('input[name="name"]').value;
+    alert(`Thank you for your message, ${name}! (Demo: Connect to a backend for real submissions.)`);
+    this.reset();
 });
