@@ -10,7 +10,7 @@
 <body>
 <header>
   <div class="container">
-    <h1>Shupe Mphofela</h1>
+    <h1>Shupe Mphofela Daniel</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -24,10 +24,10 @@
 
 <section id="about" class="section">
   <div class="container">
-    <img src="profile.jpg" alt="Shupe Mphofela Daniel" class="profile-img">
+    <img src="[Your Photo URL]" alt="Shupe Mphofela Daniel" class="profile-img">
     <h2>About Me</h2>
     <p>
-      I'm Shupe Mphofela, a Computer Science graduate from Tshwane University of Technology with a National Diploma. With a 1-year internship at INVESTHOOD IT as an IT Software Developer and Team Leader, I specialize in Java, JavaScript, React, Spring Boot, and database management (MySQL, Oracle, PostgreSQL). I led the development of the Thembisa Accommodation App, showcasing my technical expertise and leadership skills. Passionate about building innovative solutions, I thrive in collaborative environments and am eager to contribute to impactful IT projects.
+      I'm Shupe Mphofela Daniel, a Computer Science graduate from Tshwane University of Technology with a National Diploma. With a 1-year internship at INVESTHOOD IT as an IT Software Developer and Team Leader, I specialize in Java, JavaScript, React, Spring Boot, and database management (MySQL, Oracle, PostgreSQL). I led the development of the Thembisa Accommodation App, showcasing my technical expertise and leadership skills. Passionate about building innovative solutions, I thrive in collaborative environments and am eager to contribute to impactful IT projects.
     </p>
     <div class="links">
       <a href="https://linkedin.com/in/shupe-mphofela-8b38a6318" target="_blank">LinkedIn</a> |
@@ -61,7 +61,7 @@
   <div class="container">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div>Java</div>
+      <div class="skill-item" data-skill="java">Java</div>
       <div>JavaScript</div>
       <div>Kotlin</div>
       <div>React</div>
@@ -93,9 +93,34 @@
 
 <footer>
   <div class="container">
-    <p>&copy; 2025 Shupe Mphofela. All rights reserved.</p>
+    <p>&copy; 2025 Shupe Mphofela Daniel. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- Modal for Java Code Sample -->
+<div id="java-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h3>Java Project: Booking Cost Calculator</h3>
+    <pre>
+public class BookingCostCalculator {
+    public static void main(String[] args) {
+        double nightlyRate = 500.0; // Example rate in ZAR
+        int nights = 3; // Example booking duration
+        double cleaningFee = 150.0; // Example additional fee
+        double totalCost = calculateBookingCost(nightlyRate, nights, cleaningFee);
+        System.out.printf("Total Booking Cost: R%.2f%n", totalCost);
+    }
+
+    public static double calculateBookingCost(double rate, int nights, double fee) {
+        double subtotal = rate * nights;
+        return subtotal + fee;
+    }
+}
+            </pre>
+    <p>This Java program calculates the total cost of a booking for the Thembisa Accommodation App, including nightly rates and a cleaning fee.</p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
